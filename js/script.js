@@ -14,7 +14,7 @@ el && el.addEventListener('click', swapper, false);
     })
 
 
-    function swapper() {
+function swapper() {
         toggleClass(document.getElementById('overlay'), 'open');
       }
       
@@ -28,3 +28,24 @@ el && el.addEventListener('click', swapper, false);
           return false;
         };
       }
+      const loadText= document.querySelector('.loading-text')
+const bg = document.querySelector('.bg')
+
+const searchItem = () => {
+    const value = document.getElementById("search-input").value
+    window.open("https://www.google.com/search?q=" + value, '_blank');
+    document.getElementById("search-input").value = ""
+}
+
+
+// setTimeout(() => {
+//   const loading = document.querySelector('.loading')
+//   var x = 0
+//   while (x < 101) {
+//     loading.style.transform = `translateY(-${x}%)`
+//     x += 0.001
+//     console.log(x)
+//   }
+// }, 4000);
+
+

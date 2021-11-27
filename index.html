@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/resp.js"></script>
+
     <title>My Favourite Sites</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -13,186 +14,257 @@
     />
   </head>
   <body>
-    <nav class="navbar background h-nav-resp">
-      <ul class="nav-list v-class-resp">
-        <div class="logo"><img src="img/ma.png" alt="logo" /></div>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact Us</a></li>
-      </ul>
-      <div class="rightNav v-class-resp">
-        <input type="text" name="search" id="search" />
-        <button class="btn btn-sm">
-          <span class="material-icons">search</span> Search
-        </button>
-      </div>
-      <div class="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    </nav>
-    <section class="background firstSection">
-      <div class="box-main">
-        <div class="firstHalf">
-          <p class="text-big">Lore ipsu dolor sitamet.</p>
-          <p class="text-small">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam ea
-            eveniet repellendus dicta consectetur, illum, quidem officiis
-            doloribus rem quis atque odit aspernatur minus! Provident.
-          </p>
-          <div class="buttons">
-            <button class="btn">Hello</button>
-            <button class="btn">Hey</button>
+    <div class="loading">
+      <div class="inner-div"></div>
+    </div>
+    <div class="remaining">
+      <nav class="navbar background h-nav-resp">
+        <ul class="nav-list v-class-resp">
+          <div class="logo"><img src="img/ma.png" alt="logo" /></div>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+          <input type="text" name="search" id="search-input" />
+          <!-- href="https://google.com" target="_blank" -->
+          <a onclick="searchItem()">
+            <button class="btn btn-sm">
+              <span class="material-icons">search</span> Search
+            </button>
+          </a>
+        </div>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+      <section class="background firstSection">
+        <div class="box-main">
+          <div class="firstHalf">
+            <p class="text-big">Two Most Useful Website in collage life.</p>
+            <p class="text-small">
+              Webmail contrasts with email service accessible through a
+              specialised email client software<br />
+              Moodle is used for distance education, flipped classroom and other
+              e-learning projects in schools, universities, workplaces and other
+              sectors
+            </p>
+            <div class="buttons">
+              <a
+                href="https://webmail.iitb.ac.in/?_task=mail&_mbox=INBOX"
+                target="_blank"
+                ><button class="btn">Webmail</button></a
+              >
+              <a href="https://moodle.iitb.ac.in/" target="_blank"
+                ><button class="btn">Moodle</button></a
+              >
+            </div>
+          </div>
+          <div class="secondHalf">
+            <img class="jpg" src="img/mac.jpg" alt="Macbook Image" />
           </div>
         </div>
-        <div class="secondHalf">
-          <img class="jpg" src="img/mac.jpg" alt="Macbook Image" />
+      </section>
+      <section class="section" id="services">
+        <div class="paras">
+          <p class="sectionTag text-big buttons">
+            <a
+              href="https://campus.placements.iitb.ac.in/applicant/jobs"
+              target="_blank"
+              ><button class="btn">Placements</button></a
+            >
+            <a
+              href="https://www.insti.app/blog/ImFwaS90cmFpbmluZy1ibG9nez9mcm9tLG51bSxxdWVyeX0i"
+              target="_blank"
+              ><button class="btn">Internship Blogs</button></a
+            >
+          </p>
+          <p class="sectionSubTag text-small">
+            Campus placement or campus recruiting is a program conducted within
+            universities or other educational institutions to provide jobs to
+            students nearing completion of their studies. In this type of
+            program, the educational institutions partner with corporations who
+            wish to recruit from the student population.
+
+            <br />
+            An internship is a period of work experience offered by an
+            organization for a limited period of time.Once confined to medical
+            graduates, internship is used practice for a wide range of
+            placements in businesses, non-profit organizations and government
+            agencies. They are typically undertaken by students and graduates
+            looking to gain relevant skills and experience in a particular
+            field.
+          </p>
         </div>
-      </div>
-    </section>
-    <section class="section" id="services">
-      <div class="paras">
-        <p class="sectionTag text-big">The end of your search is here</p>
-        <p class="sectionSubTag text-small">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos,
-          non ratione sint, nostrum officiis dolores perferendis eligendi
-          molestias doloribus porro possimus eius ipsam sunt accusantium fugit
-          nihil repudiandae quos assumenda aliquid quibusdam, odio reiciendis
-          asperiores earum aliquam. Ipsam totam impedit, rerum sunt, autem hic
-          dolorem pariatur nisi deserunt, illo tempore aspernatur aut itaque
-          repellat? Minus, cumque quis magnam vitae soluta cupiditate. Fugit
-          inventore at quam quaerat velit quod deleniti, labore ut ab possimus
-          nam, pariatur ad necessitatibus, asperiores explicabo maxime
-          aspernatur. Aliquid beatae nobis corporis natus reprehenderit totam!
-          Suscipit consequatur molestias, alias, quae perferendis recusandae
-          voluptas repudiandae possimus placeat deleniti iusto illum atque
-          dolores odio ullam hic in qui amet deserunt doloremque ipsam error id
-          ratione cum! Delectus vero illo ducimus doloremque eaque vitae ipsum
-          voluptates natus. Voluptatem nobis nemo magnam ea ab deserunt
-          consequuntur corrupti harum facere pariatur placeat saepe deleniti
-          perferendis et voluptate non minus, in laboriosam culpa. Dicta,
-          tempore ducimus accusantium blanditiis facilis sunt necessitatibus
-        </p>
-      </div>
-      <div class="thumbnail">
-        <img
-          src="https://source.unsplash.com/900x900/?coding,samsung"
-          alt="hello image"
-          class="imgFluid"
-        />
-      </div>
-    </section>
-    <hr />
-    <section class="section section-left">
-      <div class="paras">
-        <p class="sectionTag text-big">The end of your search is here</p>
-        <p class="sectionSubTag text-small">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos,
-          non ratione sint, nostrum officiis dolores perferendis eligendi
-          molestias doloribus porro possimus eius ipsam sunt accusantium fugit
-          nihil repudiandae quos assumenda aliquid quibusdam, odio reiciendis
-          asperiores earum aliquam. Ipsam totam impedit, rerum sunt, autem hic
-          dolorem pariatur nisi deserunt, illo tempore aspernatur aut itaque
-          repellat? Minus, cumque quis magnam vitae soluta cupiditate. Fugit
-          inventore at quam quaerat velit quod deleniti, labore ut ab possimus
-          nam, pariatur ad necessitatibus, asperiores explicabo maxime
-          aspernatur. Aliquid beatae nobis corporis natus reprehenderit totam!
-          Suscipit consequatur molestias, alias, quae perferendis recusandae
-          voluptas repudiandae possimus placeat deleniti iusto illum atque
-          dolores odio ullam hic in qui amet deserunt doloremque ipsam error id
-          ratione cum! Delectus vero illo ducimus doloremque eaque vitae ipsum
-          voluptates natus. Voluptatem nobis nemo magnam ea ab deserunt
-          consequuntur corrupti harum facere pariatur placeat saepe deleniti
-          perferendis et voluptate non minus, in laboriosam culpa. Dicta,
-          tempore ducimus accusantium blanditiis facilis sunt necessitatibus
-        </p>
-      </div>
-      <div class="thumbnail">
-        <img
-          src="https://source.unsplash.com/900x900/?coding,google"
-          alt="hello image"
-          class="imgFluid"
-        />
-      </div>
-    </section>
-    <hr />
-    <section class="section">
-      <div class="paras">
-        <p class="sectionTag text-big">The end of your search is here</p>
-        <p class="sectionSubTag text-small">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos,
-          non ratione sint, nostrum officiis dolores perferendis eligendi
-          molestias doloribus porro possimus eius ipsam sunt accusantium fugit
-          nihil repudiandae quos assumenda aliquid quibusdam, odio reiciendis
-          asperiores earum aliquam. Ipsam totam impedit, rerum sunt, autem hic
-          dolorem pariatur nisi deserunt, illo tempore aspernatur aut itaque
-          repellat? Minus, cumque quis magnam vitae soluta cupiditate. Fugit
-          inventore at quam quaerat velit quod deleniti, labore ut ab possimus
-          nam, pariatur ad necessitatibus, asperiores explicabo maxime
-          aspernatur. Aliquid beatae nobis corporis natus reprehenderit totam!
-          Suscipit consequatur molestias, alias, quae perferendis recusandae
-          voluptas repudiandae possimus placeat deleniti iusto illum atque
-          dolores odio ullam hic in qui amet deserunt doloremque ipsam error id
-          ratione cum! Delectus vero illo ducimus doloremque eaque vitae ipsum
-          voluptates natus. Voluptatem nobis nemo magnam ea ab deserunt
-          consequuntur corrupti harum facere pariatur placeat saepe deleniti
-          perferendis et voluptate non minus, in laboriosam culpa. Dicta,
-          tempore ducimus accusantium blanditiis facilis sunt necessitatibus
-        </p>
-      </div>
-      <div class="thumbnail">
-        <img
-          src="https://source.unsplash.com/900x900/?coding"
-          alt="hello image"
-          class="imgFluid"
-        />
+        <div class="thumbnail">
+          <img
+            src="https://source.unsplash.com/900x900/?placements,collage"
+            alt="hello image"
+            class="imgFluid"
+          />
+        </div>
+      </section>
+      <hr />
+      <section class="section section-left">
+        <div class="paras">
+          <a
+            href="https://campus.placements.iitb.ac.in/applicant/jobs"
+            target="_blank"
+            ><button class="btn">Internal ASC</button></a
+          >
+          <a
+            href="https://www.insti.app/blog/ImFwaS90cmFpbmluZy1ibG9nez9mcm9tLG51bSxxdWVyeX0i"
+            target="_blank"
+            ><button class="btn">External ASC</button></a
+          >
+          <p class="sectionSubTag text-small">
+            The portal where we get all courses status and academic timetable
+            The portal helps a lot at the time of new semester registration.
+            <br />The external ASC portal is where we get our grades and course
+            feedback, and we also use this portal for fees payment. This also
+            shows our grades
+          </p>
+        </div>
+        <div class="thumbnail">
+          <img
+            src="https://source.unsplash.com/900x900/?coding,google"
+            alt="hello image"
+            class="imgFluid"
+          />
+        </div>
+      </section>
+      <hr />
+      <section class="section">
+        <div class="paras">
+          <a href="https://login.microsoftonline.com/login.srf" target="_blank"
+            ><button class="btn">Microsoft Teams</button></a
+          >
+          <a href="https://drive.google.com/drive/my-drive" target="_blank"
+            ><button class="btn">Google Drive</button></a
+          >
+          <p class="sectionSubTag text-small">
+            Microsoft Teams is a proprietary business communication platform
+            developed by Microsoft, as part of the Microsoft 365 family of
+            products. Teams primarily competes with the similar service Slack,
+            offering workspace chat and videoconferencing, file storage, and
+            application integration.
 
-        <hr />
-      </div>
-    </section>
-    <section class="contact" id="contact">
-      <h2 class="text-center">Contact Us</h2>
-      <div class="form">
-        <input
-          class="form-input"
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Enter your name"
-        />
-        <input
-          class="form-input"
-          type="text"
-          name="phone"
-          id="phone"
-          placeholder="Enter your Phone No."
-        />
-        <input
-          class="form-input"
-          type="text"
-          name="email"
-          id="email"
-          placeholder="Enter your email"
-        />
-        <textarea
-          class="form-input"
-          name="text"
-          itemid="text"
-          cols="30"
-          rows="10"
-          placeholder="Ellaborete your concern"
-        ></textarea>
+            <br />
+            Google Drive is a file storage and synchronization service developed
+            by Google. Google Drive offers users 15 GB of free storage through
+            Google One but our account get unlimited data storege😁. Users can
+            change privacy settings for individual files and folders, including
+            enabling sharing with other users or making content public.
+          </p>
+        </div>
+        <div class="thumbnail">
+          <img
+            src="https://source.unsplash.com/900x900/?coding"
+            alt="hello image"
+            class="imgFluid"
+          />
 
-        <button class="btn btn-sm btn-dark">Submit</button>
-      </div>
-    </section>
-    <footer class="background">
-      <p class="text-footer">
-        Copyright &copy; 2021 -www.ifav.com- All rights reserved
-      </p>
-    </footer>
-    <script src="js/resp.js"></script>
+          <hr />
+        </div>
+      </section>
+      <hr />
+      <section class="section section-left">
+        <div class="paras">
+          <a href="https://web.whatsapp.com/" target="_blank"
+            ><button class="btn">Whatsapp</button></a
+          >
+          <a href="https://www.linkedin.com/" target="_blank"
+            ><button class="btn">Linkdin</button></a
+          >
+          <p class="sectionSubTag text-small">
+            The portal where we get all courses status and academic timetable
+            The portal helps a lot at the time of new semester registration.
+            <br />The external ASC portal is where we get our grades and course
+            feedback, and we also use this portal for fees payment. This also
+            shows our grades
+          </p>
+        </div>
+        <div class="thumbnail">
+          <img
+            src="https://source.unsplash.com/900x900/?whatsapp,linkedin"
+            alt="hello image"
+            class="imgFluid"
+          />
+        </div>
+      </section>
+
+      <hr />
+      <section class="section">
+        <div class="paras">
+          <a href="https://www.youtube.com/" target="_blank"
+            ><button class="btn">Youtube</button></a
+          >
+          <a href="https://open.spotify.com/" target="_blank"
+            ><button class="btn">Spotify</button></a
+          >
+          <p class="sectionSubTag text-small">
+            The portal where we get all courses status and academic timetable
+            The portal helps a lot at the time of new semester registration.
+            <br />The external ASC portal is where we get our grades and course
+            feedback, and we also use this portal for fees payment. This also
+            shows our grades
+          </p>
+        </div>
+        <div class="thumbnail">
+          <img
+            src="https://source.unsplash.com/900x900/?spotify,youtube"
+            alt="hello image"
+            class="imgFluid"
+          />
+        </div>
+      </section>
+      <hr />
+      <section class="contact" id="contact">
+        <h2 class="text-center">Contact Us</h2>
+        <div class="form">
+          <input
+            class="form-input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+          />
+          <input
+            class="form-input"
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="Enter your Phone No."
+          />
+          <input
+            class="form-input"
+            type="text"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+          />
+          <textarea
+            class="form-input"
+            name="text"
+            itemid="text"
+            cols="30"
+            rows="10"
+            placeholder="Ellaborete your concern"
+          ></textarea>
+
+          <button class="btn btn-sm btn-dark">Submit</button>
+        </div>
+      </section>
+      <hr />
+      <footer class="background">
+        <p class="text-footer">
+          Copyright &copy; 2021 -www.ifav.com- All rights reserved
+        </p>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
